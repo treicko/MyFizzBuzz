@@ -4,7 +4,11 @@ public class FizzBuzz {
   
 	public String generar(int numero) 
 	{
-		return "Fizz";
+		if(numero == 3)
+			return "Fizz";
+		if(numero == 5)
+			return "Buzz";
+		return String.valueOf(numero);
 	}
 
 }
