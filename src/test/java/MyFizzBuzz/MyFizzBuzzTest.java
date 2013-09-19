@@ -49,5 +49,16 @@ public class MyFizzBuzzTest {
 	{
 		assertEquals("FizzBuzz", fb.generar(30));
 	}
+	
+	@Test
+	public void imprimeUnaSecuenciaDeNumerosConReglasFizzBuzz(){
+		String esperado = "1\n"+
+						  "2\n"+
+						  "Fizz\n"+
+						  "4\n"+
+						  "Buzz\n"+
+						  "Fizz\n";
+		assertEquals(esperado, fb.imprimir(6));
+	}
 
 }
