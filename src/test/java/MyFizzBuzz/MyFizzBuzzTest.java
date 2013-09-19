@@ -25,5 +25,29 @@ public class MyFizzBuzzTest {
 	{
 		assertEquals("4", fb.generar(4));
 	}
+	
+	@Test
+	public void generarFizzParaMultiplosDe3()
+	{
+		assertEquals("Fizz", fb.generar(9));
+	}
+	
+	@Test
+	public void generarBuzzParaMultiplosDe5()
+	{
+		assertEquals("Buzz", fb.generar(25));
+	}
+	
+	@Test
+	public void generarFizzBuzzPara15()
+	{
+		assertEquals("FizzBuzz", fb.generar(15));
+	}
+	
+	@Test
+	public void generarFizzBuzzParaMultiplosDe5YMultiplosDe3()
+	{
+		assertEquals("FizzBuzz", fb.generar(30));
+	}
 
 }
