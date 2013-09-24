@@ -8,9 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class FizzBuzzServlet extends HttpServlet {
+
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.getWriter().println("Servlet vivo!!");
+		String hasta = request.getParameter("hasta");
+		response.getWriter().println("Se recibi— el parametro: " + hasta);
 	}
 }
